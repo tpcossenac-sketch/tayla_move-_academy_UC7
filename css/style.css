@@ -1,7 +1,11 @@
+/* Index */
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #00295C;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 header{
     background-color: #00295C;
@@ -9,13 +13,13 @@ header{
     padding: 20px;
 }
 .logo{
-    font-size: 30px;
     font-weight: bold;
-    display: inline-block;
-    width: 250px;
-    height: 20px;
+    display: flex;
+    width: 200px;
+    height: 38px;
     border: black;
     text-align: left;
+    align-items: center;
 }
 img{
     width: 100%;
@@ -96,6 +100,7 @@ h4{
     gap: 20px;
     flex-wrap: wrap;
     padding: 50px;
+
 }
 
 .recursos{
@@ -131,6 +136,7 @@ h4{
     align-items: center;
     color: white;
     padding: 20px;
+    margin-top: auto;
 }
 
 .rodapeImagem{
@@ -168,4 +174,153 @@ h4{
 .icone img{
     width: 20px;
     height: 20px;
+}
+
+/* Página de login */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* LADO ESQUERDO */
+
+.left{
+    width: 45%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.voltar{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.right{
+    width: 55%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    width: 400px;
+}
+
+.logo_login{
+    width: 250px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.formulario h2{
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.formulario p{
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.formulario label{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.formulario input[type="email"],
+.formulario input[type="password"]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.opcoes a{
+    text-decoration: none;
+    color: #2a4591;
+}
+
+button{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2a4591;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #1d3476;
+}
+
+/* Página de Planos */
+.painelPlanos{
+    background-image: url("../img/fundo_planos.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 480px;
+    color: white;
+    padding: 50px;
+}
+.painelPlanos img{
+    width: 200px;
+}
+
+.cards_planos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.recursos_planos{
+    width: 250px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.432);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.recursos_planos img{
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.recursos_planos h2{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.recursos_planos p{
+    font-size: 15px;
 }
