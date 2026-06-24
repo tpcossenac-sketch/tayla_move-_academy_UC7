@@ -1,5 +1,5 @@
 /* Index */
-body{
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #00295C;
@@ -7,12 +7,14 @@ body{
     display: flex;
     flex-direction: column;
 }
-header{
+
+header {
     background-color: #00295C;
     color: white;
     padding: 20px;
 }
-.logo{
+
+.logo {
     font-weight: bold;
     display: flex;
     width: 200px;
@@ -21,25 +23,30 @@ header{
     text-align: left;
     align-items: center;
 }
-img{
+
+img {
     width: 100%;
 }
-footer{
+
+footer {
     background-color: #ffffff;
     color: white;
     padding: 20px;
 }
-.coluna{
+
+.coluna {
     width: 20%;
     display: inline-block;
     vertical-align: top;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.navbar{
+
+.navbar {
     background-color: #00295C;
     height: 30px;
     width: 100%;
@@ -47,9 +54,10 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
-    text-align: center;}
+    text-align: center;
+}
 
-    /* area do fred */
+/* area do fred */
 .cabeçalho {
     text-decoration: none;
 }
@@ -59,11 +67,12 @@ footer{
     border-bottom: 2px solid rgb(26, 125, 255);
 }
 
-a{
+a {
     color: #ffffff;
     font-size: 15px;
 }
-.painelPrincipal{
+
+.painelPrincipal {
     color: white;
     display: flex;
     flex-direction: column;
@@ -77,15 +86,17 @@ a{
     height: 380px;
 }
 
-h1{
+h1 {
     color: #ffffff;
     text-align: left;
 }
-h4{
+
+h4 {
     color: #ffffff;
     text-align: left;
 }
-.Entrar{
+
+.Entrar {
     text-align: center;
     font-family: sans-serif;
     border: 1px solid white;
@@ -94,7 +105,8 @@ h4{
     padding: 4px;
     color: white;
 }
-.cards{
+
+.cards {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -103,7 +115,7 @@ h4{
 
 }
 
-.recursos{
+.recursos {
     width: 250px;
     height: 170px;
     background-color: rgba(255, 255, 255, 0.432);
@@ -112,22 +124,22 @@ h4{
     box-sizing: border-box;
 }
 
-.recursos img{
+.recursos img {
     width: 30px;
     height: 30px;
     margin-bottom: 10px;
 }
 
-.recursos h2{
+.recursos h2 {
     margin-bottom: 15px;
     font-size: 20px;
 }
 
-.recursos p{
+.recursos p {
     font-size: 15px;
 }
 
-.rodape{
+.rodape {
     background-color: #2a4591;
     width: 100%;
     min-height: 150px;
@@ -139,12 +151,12 @@ h4{
     margin-top: auto;
 }
 
-.rodapeImagem{
-    width: 250px;
+.rodapeImagem {
+    width: 350px;
     height: 20px;
 }
 
-.coluna{
+.coluna {
     display: inline-block;
     flex-direction: column;
     gap: 5px;
@@ -152,40 +164,41 @@ h4{
     height: 185px;
 }
 
-.coluna h4{
+.coluna h4 {
     margin-bottom: 10px;
     font-size: 14px;
 }
 
-.coluna p{
+.coluna p {
     font-size: 12px;
     margin: 0;
 }
 
-.coluna input{
+.coluna input {
     margin-top: 10px;
     padding: 5px;
     width: 180px;
 }
 
-.icone{
+.icone {
     display: flex;
 }
-.icone img{
+
+.icone img {
     width: 20px;
     height: 20px;
 }
 
 /* Página de login */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
+.container {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -193,14 +206,15 @@ h4{
 
 /* LADO ESQUERDO */
 
-.left{
+.left {
     width: 45%;
     background-size: cover;
     background-position: center;
     position: relative;
+    background-image: url("../img/login.png");
 }
 
-.voltar{
+.voltar {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -209,7 +223,8 @@ h4{
     font-size: 14px;
 }
 
-.right{
+/* LADO DIREITO  */
+.right {
     width: 55%;
     background-color: white;
     display: flex;
@@ -217,41 +232,41 @@ h4{
     align-items: center;
 }
 
-.formulario{
+.formulario {
     width: 400px;
 }
 
-.logo_login{
+.logo_login {
     width: 250px;
     display: flex;
     margin-bottom: 30px;
 }
 
-.formulario h2{
+.formulario h2 {
     margin-bottom: 10px;
     color: #222;
 }
 
-.formulario p{
+.formulario p {
     color: #666;
     margin-bottom: 25px;
 }
 
-.formulario label{
+.formulario label {
     display: block;
     margin-bottom: 5px;
     margin-top: 15px;
 }
 
 .formulario input[type="email"],
-.formulario input[type="password"]{
+.formulario input[type="password"] {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
 }
 
-.opcoes{
+.opcoes {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -260,12 +275,12 @@ h4{
     font-size: 14px;
 }
 
-.opcoes a{
+.opcoes a {
     text-decoration: none;
     color: #2a4591;
 }
 
-button{
+button {
     width: 80%;
     padding: 10px;
     border: none;
@@ -276,12 +291,12 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #1d3476;
 }
 
 /* Página de Planos */
-.painelPlanos{
+.painelPlanos {
     background-image: url("../img/fundo_planos.png");
     background-size: cover;
     background-position: center;
@@ -290,37 +305,203 @@ button:hover{
     color: white;
     padding: 50px;
 }
-.painelPlanos img{
-    width: 200px;
-}
 
-.cards_planos{
+/* CONTAINER DOS CARDS */
+.cards_planos {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
+    /* mais espaço entre eles */
     flex-wrap: wrap;
-    padding: 50px;
-}
-.recursos_planos{
-    width: 250px;
-    height: 200px;
-    background-color: rgba(255, 255, 255, 0.432);
-    padding: 20px;
-    text-align: center;
-    box-sizing: border-box;
+    padding: 30px;
 }
 
-.recursos_planos img{
+.recursos_planos img {
     width: 30px;
     height: 30px;
     margin-bottom: 10px;
 }
 
-.recursos_planos h2{
+/* CARDS */
+.recursos_planos {
+    width: 260px;
+    min-height: 300px;
+    background: rgba(255, 255, 255, 0.15);
+    /* mais clean */
+    backdrop-filter: blur(10px);
+    /* efeito vidro (chique) */
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* HOVER BONITÃO */
+.recursos_planos:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* CARD DO MEIO DESTACADO */
+.recursos_planos-destaque {
+    width: 260px;
+    min-height: 300px;
+    background: rgba(255, 255, 255, 0.15);
+    /* mais clean */
+    backdrop-filter: blur(10px);
+    /* efeito vidro (chique) */
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    position: relative;
+}
+
+.recursos_planos-destaque:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* FAIXA "MAIS ESCOLHIDO" */
+.recursos_planos-destaque::before {
+    content: "Mais escolhido!";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2f6fd6;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.recursos_planos-destaque img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+/* ÍCONES */
+.recursos_planos img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+/* TÍTULO */
+.recursos_planos h2 {
     margin-bottom: 15px;
     font-size: 20px;
 }
 
-.recursos_planos p{
-    font-size: 15px;
+/* TEXTO */
+.recursos_planos p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* TABELA */
+.tabela-planos {
+    margin: 20px auto;
+    width: 80%;
+    background: #d9d9d9;
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead {
+    background: #cfcfcf;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 12px;
+}
+
+/* LISTRAS */
+tbody tr:nth-child(even) {
+    background: #e6e6e6;
+}
+
+/* PRIMEIRA COLUNA */
+td:first-child {
+    text-align: left;
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+/* Página de unidades */
+
+.UniFundo {
+    background: linear-gradient(90deg, #000 40%, #023e8a 76%);
+}
+
+.painelUnidades {
+    display: flex;
+    color: #ffffff;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    /* centraliza na vertical */
+    min-height: 50vh;
+    /* altura da seção */
+    text-align: center;
+    margin-left: 400px;
+}
+
+.mapa img {
+    width: 450px;
+    height: 450px;
+    margin-left: 400px;
+    margin-top: -200px;
+}
+
+.cards_unidades {
+    display: grid;
+    gap: 20px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cards_localizacao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.cards_localizacao img {
+    width: 170px;
+    height: 150px;
+    border-radius: 14px;
+}
+
+.info-unidade {
+    padding: 12px;
+    font-size: 14px;
+}
+
+.info-unidade h3 {
+    margin-bottom: 8px;
+}
+
+.cards_localizacao:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgb(26, 49, 255);
 }
