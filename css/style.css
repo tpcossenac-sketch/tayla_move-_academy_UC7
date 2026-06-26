@@ -112,7 +112,6 @@ h4 {
     gap: 20px;
     flex-wrap: wrap;
     padding: 50px;
-
 }
 
 .recursos {
@@ -122,6 +121,12 @@ h4 {
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.recursos:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .recursos img {
@@ -280,7 +285,9 @@ h4 {
     color: #2a4591;
 }
 
-button {
+.botao_aulas,
+.botao_recursos,
+.formulario button{
     width: 80%;
     padding: 10px;
     border: none;
@@ -301,7 +308,7 @@ button:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 480px;
+    min-height: 380px;
     color: white;
     padding: 50px;
 }
@@ -314,12 +321,16 @@ button:hover {
     /* mais espaço entre eles */
     flex-wrap: wrap;
     padding: 30px;
+    align-items: stretch; /* ESSA LINHA AQUI É O OURO */
 }
 
 .recursos_planos img {
     width: 30px;
     height: 30px;
     margin-bottom: 10px;
+    margin-left: 90px;
+    display: block;
+    margin: 0 auto 10px auto;
 }
 
 /* CARDS */
@@ -336,6 +347,9 @@ button:hover {
     box-sizing: border-box;
     transition: 0.3s;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 /* HOVER BONITÃO */
@@ -358,6 +372,9 @@ button:hover {
     box-sizing: border-box;
     transition: 0.3s;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .recursos_planos-destaque:hover {
@@ -384,6 +401,8 @@ button:hover {
     width: 35px;
     height: 35px;
     margin-bottom: 10px;
+    display: block;
+    margin: 0 auto 10px auto;
 }
 
 /* ÍCONES */
@@ -393,16 +412,30 @@ button:hover {
     margin-bottom: 10px;
 }
 
+.recursos_planos-destaque h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.recursos_planos-destaque p{
+    font-size: 14px;
+    margin: 5px 0;
+    color: #fff;
+}
+
 /* TÍTULO */
 .recursos_planos h2 {
     margin-bottom: 15px;
     font-size: 20px;
+    color: #fff;
 }
 
 /* TEXTO */
 .recursos_planos p {
     font-size: 14px;
     margin: 5px 0;
+    color: #fff;
 }
 
 /* TABELA */
@@ -443,6 +476,13 @@ td:first-child {
     font-weight: 500;
 }
 
+.botao_recursos {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    width: 100%;
+}
+
 /* Página de unidades */
 
 .UniFundo {
@@ -456,10 +496,10 @@ td:first-child {
     flex-direction: column;
     justify-content: center;
     /* centraliza na vertical */
-    min-height: 50vh;
+    min-height: 60vh;
     /* altura da seção */
     text-align: center;
-    margin-left: 400px;
+    margin-left: 300px;
 }
 
 .mapa img {
@@ -504,4 +544,200 @@ td:first-child {
 .cards_localizacao:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgb(26, 49, 255);
+}
+
+/* Página de aulas */
+
+.painelAulas {
+    background: linear-gradient(90deg, #000 40%, #023e8a 76%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 650px;
+    color: white;
+    padding: 50px;
+
+}
+
+.painelHorarios {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    width: 70%;
+    border-radius: 15px;
+    margin: 0px auto; /* centraliza horizontalmente */
+    margin-top: 20px;
+}
+
+table {
+    width: 97%;
+    text-align: center;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    height: 15px;
+    margin-left: 20px;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+
+.painelOpcoes {
+    color: rgb(0, 0, 0);
+    width: 70%;
+    border-radius: 15px;
+    margin: 0px auto; /* centraliza horizontalmente */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.opcoes_painel {
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: #2a4591;
+    color: white;
+}
+
+td {
+    background: white;
+    padding: 0px 20px;
+    vertical-align: middle; /* centraliza na vertical */
+}
+
+td:nth-child(1) { /* Hora */
+    width: 120px;
+    text-align: center;
+}
+
+td:nth-child(2) { /* Modalidade */
+    width: 220px;
+    text-align: left;
+}
+
+td:nth-child(3) { /* Professor */
+    width: 220px;
+    text-align: left;
+}
+
+td:nth-child(4) { /* Sala */
+    width: 150px;
+    text-align: center;
+}
+
+td:nth-child(5) { /* Botão */
+    width: 200px;
+    text-align: center;
+}
+
+.cardAula-carrossel-container{
+    position: relative;
+    flex: 1;
+    max-width: 700px;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.imagens-slide{
+    width: 850px;
+    height: 250px;
+    position: relative;
+}
+
+.imagens-slide img{
+    width: 850px;
+    height: 300px;
+    object-fit: cover;
+    display: none;
+}
+
+.imagens-slide img.ativa{
+    display: block;
+}
+
+/* botões */
+.botao-nav{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0,0,0,.45);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#prev{
+    left: 15px;
+}
+
+#next{
+    right: 15px;
+}
+/* bolinhas */
+.indicadores {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.bolinha {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+
+.bolinha.ativa {
+    background: white;
+}
+
+/* animação */
+@keyframes fade {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+
+.topo-aulas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    width: 90%;
+    margin: 0 auto 40px;
+}
+
+.texto-aulas{
+    flex: 1;
+}
+
+.texto-aulas h1{
+    margin: 0;
+    color: white;
+    font-size: 50px;
+}
+
+.texto-aulas h1 strong{
+    color: #2450fd;
+}
+
+.texto-aulas h4{
+    margin-top: 20px;
+    color: white;
+    font-weight: normal;
 }
