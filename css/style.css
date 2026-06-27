@@ -285,13 +285,7 @@ h4 {
     color: #2a4591;
 }
 
-<<<<<<< HEAD
 button {
-=======
-.botao_aulas,
-.botao_recursos,
-.formulario button{
->>>>>>> bb7800464cb5f30da1f93d7a1b04b46af5c1dfd8
     width: 80%;
     padding: 10px;
     border: none;
@@ -548,9 +542,6 @@ td:first-child {
 .cards_localizacao:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgb(26, 49, 255);
-<<<<<<< HEAD
-}
-=======
 }
 
 /* Página de aulas */
