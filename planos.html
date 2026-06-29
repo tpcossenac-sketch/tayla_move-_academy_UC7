@@ -9,6 +9,7 @@
     <title>Planos</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img\+.png">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -18,10 +19,24 @@
             <div class="logo">
                 <img src="img/logo2.png">
             </div>
-            <h4></h4><a href="index.html" class="cabeçalho">Início</a></h4>
-            <h4><a href="planos.html" class="cabeçalho">Planos</a></h4>
-            <h4><a href="aulas.html" class="cabeçalho">Aulas</a></h4>
-            <h4><a href="unidades.html" class="cabeçalho">Unidades</a></h4>
+
+            <h4><a href="index.html" class="cabeçalho">Início</a></h4>
+
+            <h4 id="menuPlanos">
+                <a href="planos.html" class="cabeçalho">Planos</a>
+            </h4>
+
+            <h4 id="menuAulas">
+                <a href="aulas.html" class="cabeçalho">Aulas</a>
+            </h4>
+
+            <h4 id="menuUnidades">
+                <a href="unidades.html" class="cabeçalho">Unidades</a>
+            </h4>
+
+            <h4 id="menuTreinos" style="display:none;">
+                <a href="treinos.html" class="cabeçalho">Treinos</a>
+            </h4>
 
             <div class="Entrar">
                 <a href="login.html">Entrar</a>
@@ -42,30 +57,39 @@
         <div class="recursos_planos">
             <img src="img/PlanoBasico.png">
             <h2>Plano Básico+</h2>
+            <h1>R$ 49,90</h1>
             <p>Equipamentos</p>
             <p>Plano de treino</p>
-            <button class="botao_recursos">Escolher Plano</button>
+            <a href="cadastro.html" class="botao_recursos" onclick="localStorage.setItem('planoEscolhido','basico')">
+                Escolher Plano
+            </a>
         </div>
 
         <div class="recursos_planos-destaque">
             <img src="img/PlanoPremium+.png">
             <h2>Plano Premium+</h2>
+            <h1>R$ 129,90</h1>
             <p>Equipamentos</p>
             <p>Plano de treino</p>
             <p>Avaliação física</p>
             <p>Aulas coletivas</p>
-            <button class="botao_recursos">Escolher Plano</button>
+            <a href="cadastro.html" class="botao_recursos" onclick="localStorage.setItem('planoEscolhido','premium')">
+                Escolher Plano
+            </a>
         </div>
 
         <div class="recursos_planos">
             <img src="img/PlanoVIP+.png">
             <h2>Plano VIP+</h2>
+            <h1>R$ 199,90</h1>
             <p>Equipamentos</p>
             <p>Plano de treino</p>
             <p>Avaliação física</p>
             <p>Aulas coletivas</p>
             <p>Nutricionista</p>
-            <button class="botao_recursos">Escolher Plano</button>
+            <a href="cadastro.html" class="botao_recursos" onclick="localStorage.setItem('planoEscolhido','vip')">
+                Escolher Plano
+            </a>
         </div>
 
     </div>
@@ -138,7 +162,7 @@
             <input type="email" placeholder="Coloque seu e-mail aqui">
         </div>
     </div>
-
+<script src="js/pagamento.js"></script>
 </body>
 
 </html>

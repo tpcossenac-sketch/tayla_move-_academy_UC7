@@ -1,28 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-           <meta charset="UTF-8">
-           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-           <meta name="description" content="Conheça a Move+ Academy! Uma academia completa com infraestrutura moderna, treinos personalizados e professores prontos para acelerar os seus resultados. Na Move+ Academy você encontra o equilíbrio perfeito entre saúde e alta performance. Treinos inteligentes, modalidades variadas e uma comunidade ativa. Comece hoje!" >
-           <title>Treinos</title>
-           <link rel="icon" type="image/png" sizes="32x32" href="img\+.png">
-           <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
 
-       <header>
-        <nav class="navbar">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conheça a Move+ Academy! Uma academia completa com infraestrutura moderna, treinos personalizados e professores prontos para acelerar os seus resultados. Na Move+ Academy você encontra o equilíbrio perfeito entre saúde e alta performance. Treinos inteligentes, modalidades variadas e uma comunidade ativa. Comece hoje!">
+    <title>Treinos</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img\+.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body_treinos">
+
+    <header>
+        <nav class="navbar">
             <div class="logo">
-                Move+ <sub>Academy</sub>
+                <img src="img/logo2.png">
             </div>
-                    <h4></h4><a href="index.html">Início</a></h4>
-                    <h4><a href="planos.html">Planos</a></h4>
-                    <h4><a href="aulas.html">Aulas</a></h4>
-                    <h4><a href="unidades.html">Unidades</a></h4>
-                    <h4><a href="treinos.html">Treino</a></h4>
-                    <h4><a href="pagamento.html">Pagamento</a></h4>
-                    <a href="login.html" class="btn-entrar">Entrar</a>
-            </nav>
-        </header>
-    </body>
+
+            <h4><a href="index.html" class="cabeçalho">Início</a></h4>
+
+            <h4 id="menuPlanos">
+                <a href="planos.html" class="cabeçalho">Planos</a>
+            </h4>
+
+            <h4 id="menuAulas">
+                <a href="aulas.html" class="cabeçalho">Aulas</a>
+            </h4>
+
+            <h4 id="menuUnidades">
+                <a href="unidades.html" class="cabeçalho">Unidades</a>
+            </h4>
+
+            <h4 id="menuTreinos" style="display:none;">
+                <a href="treinos.html" class="cabeçalho">Treinos</a>
+            </h4>
+
+            <div class="Entrar">
+                <a href="login.html">Entrar</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="painelTopo">
+        <h1>Meus Treinos</h1>
+        <p>Selecione abaixo o treino que deseja realizar hoje <br>
+            <strong style="color: rgb(36, 76, 253)"> e evolua seus objetivos!</strong>
+        </p>
+    </div>
+
+    <div class="opcoes_treinos">
+        <h3><strong style="color: blue;">|</strong> Escolha seu treino.</h3>
+
+        <div class="card_treinos">
+
+            <div class="treinos">
+                <h2><strong style="color: rgb(73, 73, 255);">Treino A</strong></h2>
+                <h4>Glúteos</h4>
+                <img src="img/treino_gluteo.png" alt="Treino A">
+
+                <div class="informacoes_treino">
+                    <h6> Foco no desenvolvimento e fortalecimento dos glúteos.</h6>
+                    <h6> Principais músculos trabalhados: glúteo. </h6>
+
+                    <button class="botao_treinos">
+                        Escolher Treino
+                    </button>
+                </div>
+            </div>
+
+            <div class="treinos">
+                <h2><strong style="color: rgb(152, 35, 255);">Treino B</strong></h2>
+                <h4>Superiores</h4>
+                <img src="img/treino_superiores.png" alt="Treino B">
+
+                <div class="informacoes_treino">
+                    <h6> Foco no desenvolvimento da parte superior do corpo.</h6>
+                    <h6> Principais músculos trabalhados: peito, costas, ombros, bíceps, tríceps. </h6>
+
+                    <button class="botao_treinos">
+                        Escolher Treino
+                    </button>
+                </div>
+            </div>
+
+            <div class="treinos">
+                <h2><strong style="color: rgb(0, 255, 195);">Treino C</strong></h2>
+                <h4>Inferiores</h4>
+                <img src="img/treino_inferiores.png" alt="Treino C">
+
+                <div class="informacoes_treino">
+                    <h6> Foco no desenvolvimento e fortalecimento das pernas.</h6>
+                    <h6> Principais músculos trabalhados: quadríceps, posteriores, panturrilha. </h6>
+
+                    <button class="botao_treinos">
+                        Escolher Treino
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="progresso">
+
+        <h2>Seu progresso</h2>
+
+        <div class="cards_progresso">
+
+            <div class="card_progresso">
+                <h3>18</h3>
+                <p>Treinos concluídos</p>
+            </div>
+
+            <div class="card_progresso">
+                <h3>18</h3>
+                <p>Dias ativos</p>
+            </div>
+
+            <div class="card_progresso">
+                <h3>7h 35min</h3>
+                <p>Tempo treinando</p>
+            </div>
+
+            <div class="card_progresso">
+                <h3>94%</h3>
+                <p>Meta semanal</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
 </html>
